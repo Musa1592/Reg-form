@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Clothing Brand</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1> AL Ansar Clothing Brand</h1>
+            <p>Fashion that speaks your style</p>
+            <br>
+            <h2 class="welcome-message">"Welcome AL Ansar Clothing Brand, where style meets comfort.
+
+                We're so glad you're here! At [Your Brand Name], we believe that fashion should feel as good as it
+                looks. Whether you're
+                dressing for a day at the office, a weekend adventure, or a special occasion, we've got the perfect
+                pieces to make you
+                feel confident, comfortable, and effortlessly stylish.
+
+                Explore our latest collection and discover the timeless, high-quality designs that will become your new
+                favorites. Thank
+                you for choosing us to be a part of your style journey!"
+
+                ---
+
+                Feel free to personalize it with your brand's name and adjust the tone to match your brand's personality
+            </h2>
+            <button onclick="window.location.href='#products'">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Latest Collection</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="images/1.jpg.jpg">
+                <h3>Classic Caps</h3>
+                <p>₦5000.00</p>
+                <button onclick="addToCart('Classic White T-shirt', 25)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/2.jpg.jpg">
+                <h3>White shadda</h3>
+                <p>₦10000.00.00</p>
+                <button onclick="addToCart('Blue Denim Jeans', 40)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/3.jpg.jpg">
+                <h3>Osaka</h3>
+                <p>₦12000.00</p>
+                <button onclick="addToCart('Leather Jacket', 120)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a fashion brand committed to bringing you the latest trends and high-quality clothing for every
+            occasion.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Al Ansar Clothing Brand. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
